@@ -10,9 +10,13 @@ Uncomment the various method calls to compare CPU time necessary to compute matr
 
 ### Naive
 
+Note the spike.
+
 ![Naive implementation](data/naive graph.png)
 
 ### Accelerated
+
+Note the downward trend once we reach a larger dataset. Total size of matrices is approximately 105,000,000 in last data point.
 
 ![Accelerated implementation](data/accelerated graph.png)
 
