@@ -135,7 +135,7 @@ BOOL static TimeInfoSucceeded;
  * |1 2| == [[1,2],[5,7]]
  * |5 7|
  *
- * When multiplying matrices of different sizes ensure that n matches such that: mxn * nxp
+ * When multiplying matrices of different sizes ensure that p matches such that: (m x p) * (p x n)
  */
 
 - (void) naiveMatrixMultiplication:(NSArray *) matrixA
