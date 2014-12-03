@@ -3,7 +3,7 @@
 //  Math
 //
 //  Created by Sean Soper on 11/29/14.
-//  Copyright (c) 2014 The Washington Post. All rights reserved.
+//  Copyright (c) 2014 Sean Soper. All rights reserved.
 //
 
 #import <mach/mach_time.h>
