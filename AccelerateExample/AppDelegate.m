@@ -6,6 +6,8 @@
 //
 //
 
+#import <Accelerate/Accelerate.h>
+
 #import "AppDelegate.h"
 
 @interface AppDelegate ()
@@ -16,8 +18,19 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    // [self vectorMultiplyExample];
     return YES;
+}
+
+- (void) vectorMultiplyExample {
+    float a[8] = {1, 2, 3, 4, 5, 6, 7, 8};
+    float b[8] = {9, 10, 11, 12, 13, 14, 15, 16};
+    float c[8];
+    int n = 8;
+    vDSP_vmul(a, 1, b, 1, c, 1, n);
+    for (int i = 0; i < n; i++) {
+        NSLog(@"stop %f", c[i]);
+    }
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
